@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vegetable.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_vegetable_path(@vegetable) %> |
+<%= link_to 'Back', vegetables_path %>
+
+<p>
+  <b>Companions:</b>
+  <ul>
+    <% @vegetable.companions.each do |vegetable| %>
+      <li><%= vegetable.name %></li>
+    <% end %>
+  </ul>
+</p>
+
+<p>
+  <b>Antagonists:</b>
+  <ul>
+    <% @vegetable.antagonists.each do |vegetable| %>
+      <li><%= vegetable.name %></li>
+    <% end %>
+  </ul>
+</p>

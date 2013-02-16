@@ -1,0 +1,25 @@
+<%= form_for(@antagonism) do |f| %>
+  <% if @antagonism.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@antagonism.errors.count, "error") %> prohibited this antagonism from being saved:</h2>
+
+      <ul>
+      <% @antagonism.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_id %><br />
+    <%= f.collection_select :first_id, Vegetable.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :second_id %><br />
+    <%= f.collection_select :second_id, Vegetable.all, :id, :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
