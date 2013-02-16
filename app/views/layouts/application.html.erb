@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Veggies</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Garden Goat</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Satisfy|Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
 
-<%= yield %>
+  </head>
+  <body>
 
-</body>
+    <%= yield %>
+
+  </body>
+
+  <footer>The Garden Goat LLC 2013</footer>
 </html>
