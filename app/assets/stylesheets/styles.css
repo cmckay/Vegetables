@@ -1,0 +1,49 @@
+.plot {
+  width: 25%;
+  padding: 2%;
+  text-align: center;
+  border: 1px solid #999;
+  float: left;
+  font-size: 7px;
+}
+
+.compatible {
+  background-color: #509A47;
+}
+
+.conflicting {
+  background-color: #E2431B;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 1% 4%;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.styled_select {
+
+}
+
+.evaluate_btn {
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color:#ededed;
+  -webkit-border-radius:4px;
+     -moz-border-radius:4px;
+          border-radius:4px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color: #8ec63f;
+  font-family:arial;
+  font-size:8px;
+  font-weight:bold;
+  padding:2% 6%;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #ffffff;
+  margin: 1% 0 0 0;
+}
