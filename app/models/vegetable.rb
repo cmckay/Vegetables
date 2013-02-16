@@ -23,24 +23,25 @@ class Vegetable < ActiveRecord::Base
     return companion_vegetables
   end
 
-    def antagonisms
+  def antagonisms
     left_side_relationships = Antagonisms.where(:first_id => self.id)
     right_side_relationships = Antagonisms.where(:second_id => self.id)
     return left_side_relationships + right_side_relationships
   end
 
-  def companions
+  def antagonists
     antagonist_vegetables = []
 
-    left_side_relationships = Antagonisms.where(:first_id => self.id)
-    left_side_relationships.each do |antagonisms|
-      antagonsit_vegetables << antagonisms.second
+    left_side_relationships = Antagonism.where(:first_id => self.id)
+    left_side_relationships.each do |antagonism|
+      antagonsit_vegetables << antagonism.second
     end
 
-    right_side_relationships = Antagonisms.where(:second_id => self.id)
-    right_side_relationships.each do |antagonisms|
-      antagonist_vegetables << antagonisms.first
+    right_side_relationships = Antagonism.where(:second_id => self.id)
+    right_side_relationships.each do |antagonism|
+      antagonist_vegetables << antagonism.first
     end
 
     return antagonist_vegetables
+end
 end
