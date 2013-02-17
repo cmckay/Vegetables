@@ -12,6 +12,10 @@ body {
   z-index:70;
 }
 
+.introtext {
+  padding: 2%;
+}
+
 .bubble{
   margin: 0px auto;
   width: 900px;
@@ -23,6 +27,7 @@ body {
   -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
   position: relative;
+  padding-bottom: 2%;
   z-index: 80;
 }
 .rectangle{
@@ -51,6 +56,7 @@ h1{
   left:-9999px;
   font-style: bold;
 }
+
 h2{
   font-size: 32px;
   font-family:'Satisfy', cursive;
@@ -59,10 +65,16 @@ h2{
   text-align: left;
 }
 
+h3{
+
+
+}
+
 section{
   clear:both;
-  margin: 50px 20px 10px 20px;
-  background-color: #88B775;
+  margin: 3% 5% 2% 5%;
+/*  margin: 50px 20px 10px 20px;
+*/  background-color: #88B775;
   border: 1px solid #252525;
 }
 
@@ -73,16 +85,6 @@ h3{
 p{
   font-size: 9px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .plot {
   width: 25%;
@@ -135,7 +137,7 @@ input[type="submit"] {
 }
 
 footer{
-  margin:0 auto;
+  margin:10px auto;
   background-color:#D3DEDB;
   padding-top: 5px;
   border: 1px solid #252525;

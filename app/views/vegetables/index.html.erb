@@ -7,7 +7,7 @@
       </div> <!--Close of Rectangle-->
       <div class="clear"></div>
     </header>
-    <section>
+    <section class="introtext">
       <h3>Who We are:</h3>
       <p>Goats prefer to browse on vines, such as kudzu, on shrubbery and on weeds, more like deer than sheep, preferring them to grasses. Nightshade is poisonous; wilted fruit tree leaves can also kill goats. Silage (fermented corn stalks) and haylage (fermented grass hay) can be used if consumed immediately after opening - goats are particularly sensitive to Listeria bacteria that can grow in fermented feeds. Alfalfa, a high-protein plant, is widely fed as hay; fescue is the least palatable and least nutritious hay. Mold in a goat's feed can make it sick and possibly kill it. Goats should not be fed grass showing any signs of mold.</p>
     </section>
@@ -149,12 +149,11 @@
           </select>
         </li>
       </ol>
-      <input class="evaluate_btn" type="submit" name="evaluate" value="Evaluate">
+    <!--   <input class="evaluate_btn" type="submit" name="evaluate" value="Evaluate"> -->
+        <%= link_to 'New Vegetable', new_vegetable_path %> ||
+        <%= link_to 'New Companion', new_companionship_path %> ||
+        <%= link_to 'New Antagonist', new_antagonism_path %>
     </section>
-
-  <%= link_to 'New Vegetable', new_vegetable_path %> ||
-  <%= link_to 'New Companion', new_companionship_path %> ||
-  <%= link_to 'New Antagonist', new_antagonism_path %>
 
   </div>
 </div>
