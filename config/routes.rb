@@ -1,4 +1,5 @@
 Veggies::Application.routes.draw do
+  root to: 'vegetables#index'
   resources :antagonisms
 
 
