@@ -23,20 +23,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -54,7 +59,7 @@ body {
 #container{
   width: 960px;
   background-color:#509A47;
-  margin: 20px auto 0px auto;
+  margin: 20px auto;
   position: relative;
   clear:both;
   z-index:70;
@@ -63,13 +68,15 @@ body {
 .bubble{
   margin: 0px auto;
   width: 900px;
+  padding-bottom: 2%;
   background-color:#D3DEDB;
-  -moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
   -webkit-border-radius: 10px;
-  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-  -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+   -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+   -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+
   position: relative;
   z-index: 80;
 }
@@ -87,9 +94,11 @@ body {
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.65);
   z-index: 100;
 }
+
 .clear{
   clear:both;
 }
+
 .rectangle:before, .rectangle:after {
  content: "";
  position: absolute;
@@ -98,16 +107,19 @@ body {
  border: 90px solid #575d61;
  z-index: -1;
 }
+
 .rectangle:before {
  left: -160px;
  border-right-width: 70px;
  border-left-color: transparent;
 }
+
 .rectangle:after {
  right: -160px;
  border-left-width: 70px;
  border-right-color: transparent;
 }
+
 .rectangle .rectangle-content:before, .rectangle .rectangle-content:after {
  content: "";
  position: absolute;
@@ -116,10 +128,12 @@ body {
  border-color: black transparent transparent transparent;
  bottom: -30px;
 }
+
 .rectangle .rectangle-content:before {
  left: 0;
  border-width: 30px 0 0 30px;
 }
+
 .rectangle .rectangle-content:after {
  right: 0;
  border-width: 30px 30px 0 0;
@@ -132,31 +146,13 @@ h1{
   left:-9999px;
   font-style: bold;
 }
+
 h2{
   font-size: 32px;
   font-family:'Satisfy', cursive;
   position:relative;
   text-align: left;
   padding:10px;
-}
-.headertxt{
-  position:relative;
-  left:-9999px;
-}
-
-section{
-  clear:both;
-  margin: 50px 20px 10px 20px;
-  background-color: #88B775;
-  border: 1px solid #252525;
-  border-color: white;
-   -moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-.howtouse{
-  margin-top:20px;
 }
 
 h3{
@@ -168,9 +164,32 @@ p{
   line-height: 20px;
   padding:10px;
 }
+
 strong{
   font-style:italic;
 }
+
+.headertxt{
+  position:relative;
+  left:-9999px;
+}
+
+
+section.welcome{
+  clear:both;
+  margin: 5% 2% 1% 2%;
+  background-color: #88B775;
+  border: 1px solid #252525;
+  border-color: white;
+  -webkit-border-radius: 10px;
+   -khtml-border-radius: 10px;
+     -moz-border-radius: 10px;
+}
+
+section.howtouse{
+  margin: 2%;
+}
+
 
 footer{
   margin:0 auto;
@@ -186,12 +205,25 @@ footer{
 }
 
 .plot {
-  width: 25%;
   padding: 2%;
   text-align: center;
   border: 1px solid #999;
   float: left;
   font-size: 7px;
+  background-color: #fff;
+}
+
+.fourbyfour {
+  width: 25%;
+}
+
+.fourbyeight {
+  width: 12.5%;
+}
+
+
+.addveggies {
+  margin-left: 2%;
 }
 
 .compatible {
@@ -201,6 +233,69 @@ footer{
 .conflicting {
   background-color: #E2431B;
 }
+
+.tab-nav {
+  list-style: none;
+  margin: 0 0 0 2.3%;
+  padding: 0;
+
+}
+
+.tab-nav li{
+  float: left;
+}
+
+.tab-nav a {
+  background: #f5f7f5;
+  border: 1px solid #c6c9cc;
+  color: #8c9198;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 140px;
+}
+
+.tab-nav .tab-active a {
+  background: #fff;
+  border-bottom-color: transparent;
+  color: #8ec63f;
+  cursor: default;
+}
+
+.tab-nav li:last-child a{
+  -webkit-border-top-right-radius: 6px;
+      -moz-border-radius-topright: 6px;
+          border-top-right-radius: 6px;
+}
+
+.tab-nav li:first-child a{
+  -webkit-border-top-left-radius: 6px;
+      -moz-border-radius-topleft: 6px;
+          border-top-left-radius: 6px;
+}
+
+.plot-container {
+  border: 1px solid #c6c9cc;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+      -ms-border-radius: 0 0 6px 6px;
+       -o-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  border-top: 0;
+  clear: both;
+  margin: 20px;
+  padding: 1%;
+  background-color: #fff;
+/*  position: relative;
+  top: -1px;
+  width: 281px;*/
+}
+
 
 
 

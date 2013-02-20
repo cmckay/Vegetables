@@ -1,6 +1,12 @@
-<section class="group">
+<ol class="tab-nav">
+  <li><a href="#tab-fourbyfour">4 x 4</a></li>
+  <li><a href="#tab-fourbyeight">4 x 8</a></li>
+</ol>  
+
+<section class="group plot-container">
+  <div id="tab-fourbyfour">
     <ol class="group">
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="1A">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -8,7 +14,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="1B">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -16,7 +22,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="1C">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -24,7 +30,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="1D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -34,7 +40,7 @@
       </li>
     </ol>
     <ol class="group">
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="2A">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -42,7 +48,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="2B">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -50,7 +56,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="2C">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -58,7 +64,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="2D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -68,7 +74,7 @@
       </li>
     </ol>
     <ol class="group">
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="3A">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -76,7 +82,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="3B">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -84,7 +90,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="3C">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -92,7 +98,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="3D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -102,7 +108,7 @@
       </li>
     </ol>
     <ol class="group">
-      <li class="plot">
+      <li class="fourbyfour plot">
          <select name="1D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -110,7 +116,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="2D">
           <option value="Null" selected>Select</option>
              <% @vegetables.each do |vegetable| %>
@@ -118,7 +124,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="3D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -126,7 +132,7 @@
             <% end %>
         </select>
       </li>
-      <li class="plot">
+      <li class="fourbyfour plot">
         <select name="4D">
           <option value="Null" selected>Select</option>
             <% @vegetables.each do |vegetable| %>
@@ -135,7 +141,281 @@
         </select>
       </li>
     </ol>
+  </div>
+
+<!-- FOUR BY EIGHT PLOT -->
+
+  <div id="tab-fourbyeight">
+    <ol class="group">
+      <li class="fourbyeight plot">
+        <select name="1A">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1B">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li> 
+      <li class="fourbyeight plot">
+        <select name="1C">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1D">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1E">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1F">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1G">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="1H">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+    </ol>
+    <ol class="group">
+      <li class="fourbyeight plot">
+        <select name="2A">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2B">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2C">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2D">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+         <select name="2E">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2F">
+          <option value="Null" selected>Select</option>
+             <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2G">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="2H">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+    </ol>
+    <ol class="group">
+      <li class="fourbyeight plot">
+        <select name="3A">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3B">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3C">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3D">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3E">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3F">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3G">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="3H">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+    </ol>
+    <ol class="group">
+      <li class="fourbyeight plot">
+        <select name="4A">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4B">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4C">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4D">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+         <select name="4E">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4F">
+          <option value="Null" selected>Select</option>
+             <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4G">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+      <li class="fourbyeight plot">
+        <select name="4H">
+          <option value="Null" selected>Select</option>
+            <% @vegetables.each do |vegetable| %>
+              <option value="vegetable"><%= vegetable.name %></option>
+            <% end %>
+        </select>
+      </li>
+    <ol>
+  </div>
+
   <!--   <input class="evaluate_btn" type="submit" name="evaluate" value="Evaluate"> -->
+</section>
+
+<section class="addveggies">
   <%= link_to 'New Vegetable', new_vegetable_path %> ||
   <%= link_to 'New Companion', new_companionship_path %> ||
   <%= link_to 'New Antagonist', new_antagonism_path %>
